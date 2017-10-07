@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\text_indicator_normal.png",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\text_indicator_normal.png"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_photo_loading.png",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_photo_loading.png"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\text_indicator_pressed.png",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\text_indicator_pressed.png"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_unselected.png",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btn_unselected.png"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_selected.png",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btn_selected.png"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_dir.png",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_dir.png"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_camera.png",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_camera.png"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_dir_choose.png",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_dir_choose.png"
+    }
+]

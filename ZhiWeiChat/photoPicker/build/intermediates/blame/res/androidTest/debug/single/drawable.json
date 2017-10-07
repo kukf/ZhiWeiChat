@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\gray_boder.xml",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\gray_boder.xml"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\scrollbar_vertical_thumb.xml",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\scrollbar_vertical_thumb.xml"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\action_btn.xml",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\action_btn.xml"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\fx_top_bar_back.xml",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\fx_top_bar_back.xml"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bg_camera_selector.xml",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\bg_camera_selector.xml"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\text_indicator_selector.xml",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\text_indicator_selector.xml"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\layout_selector.xml",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\layout_selector.xml"
+    },
+    {
+        "merged": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\btn_select_selector.xml",
+        "source": "D:\\code\\ZZXPT\\photoPicker\\build\\intermediates\\bundles\\debug\\res\\drawable\\btn_select_selector.xml"
+    }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:background="@drawable/gray_boder"
+    >
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="top|right"
+        android:scaleType="centerCrop"
+        android:background="@drawable/close"
+        />
+
+    <ImageView
+        android:id="@+id/sdv_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+</FrameLayout>

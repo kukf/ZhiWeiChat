@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MyTheme" parent="Base.MyTheme"></style>
+
+    <style name="Base.MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/background_material_light</item>
+    </style>
+
+    <style name="MyTheme.Transparent" parent="MyTheme">
+        <item name="android:colorBackground">@color/background_floating_material_dark</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@style/RtlOverlay.DialogWindowTitle.AppCompat</item>
+        <item name="android:windowTitleBackgroundStyle">
+            @style/Base.DialogWindowTitleBackground.AppCompat
+        </item>
+        <item name="android:windowBackground">@drawable/abc_dialog_material_background_dark</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="listPreferredItemPaddingLeft">24dip</item>
+        <item name="listPreferredItemPaddingRight">24dip</item>
+
+        <item name="android:listDivider">@null</item>
+    </style>
+
+    <style name="MyAppDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/primary_500</item>
+        <item name="colorPrimaryDark">@color/primary_700</item>
+        <item name="colorAccent">@color/accent_500</item>
+    </style>
+
+    <style name="Widget.MyApp.HeaderBar.Spinner" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:dropDownSelector">?attr/selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="overlapAnchor">true</item>
+    </style>
+
+    <style name="MyTheme.Detail" parent="MyTheme"></style>
+
+    <!-- Font styles Start -->
+
+    <style name="MatchWrap">
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- Header -->
+
+    <style name="text_black_header_title_normal" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">31sp</item>
+
+    </style>
+
+    <style name="text_black_header_title_normal_singleline" parent="text_black_header_title_normal">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_header_title01" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">31sp</item>
+    </style>
+
+
+    <style name="text_black_header_title02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">31sp</item>
+    </style>
+
+    <style name="text_black_header_tag" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="text_black_header_singleline" parent="text_black_header_tag">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_header_search" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textColorHint">@color/search_grey</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="text_black_header_search_singleline" parent="text_black_header_search">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_header_tag_user" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_header_tag_user_singleline" parent="text_header_tag_user">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_write_media" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text_black_write_media_singleline" parent="text_black_write_media">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Main -->
+
+    <style name="text_main_title01" parent="MatchWrap">
+        <item name="android:textColor">@color/com_deepgrey</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_main_title02" parent="MatchWrap">
+        <item name="android:textColor">@color/bg_black_70</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_main_more" parent="MatchWrap">
+        <item name="android:textColor">@color/search_grey</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_black_main_tab" parent="MatchWrap">
+        <item name="android:textColor">@color/com_whitered</item>
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+    <style name="text_black_main_list_tag01" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">25sp</item>
+
+    </style>
+
+    <style name="text_black_main_list_tag01_singleline" parent="text_black_main_list_tag01">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_main_list_tag02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">25sp</item>
+
+    </style>
+
+    <style name="text_black_main_list_tag02_singleline" parent="text_black_main_list_tag02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_main_list_title01" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">30sp</item>
+
+    </style>
+
+    <style name="text_black_main_list_title01_singleline" parent="text_black_main_list_title01">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_main_list_title02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">23sp</item>
+
+    </style>
+
+    <style name="text_black_main_list_title02_singleline" parent="text_black_main_list_title02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_main_list_title03" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">21sp</item>
+
+    </style>
+
+    <style name="text_black_main_list_title04" parent="MatchWrap">
+        <item name="android:textColor">@color/com_deepgrey</item>
+        <item name="android:textSize">19sp</item>
+
+    </style>
+
+    <style name="text_main_list_user" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_main_list_user_singleline" parent="text_main_list_user">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_main_search_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_brightsilver</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_main_search" parent="MatchWrap">
+        <item name="android:textColor">@color/search_grey</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_main_search_singleline" parent="text_main_search">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- List -->
+
+
+    <style name="text_list_contents" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white_60</item>
+        <item name="android:textSize">13sp</item>
+
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="black_text_sub_list_head" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">11sp</item>
+
+    </style>
+
+    <style name="black_text_sub_list_head_singleline" parent="black_text_sub_list_head">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_sub_list_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">22.5sp</item>
+
+    </style>
+
+    <style name="text_black_sub_list_title_singleline" parent="text_black_sub_list_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_sub_list_tag" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text_black_sub_list_tag_singleline" parent="text_black_sub_list_tag">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_sub_list_title02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">22.5sp</item>
+    </style>
+
+    <style name="text_black_sub_list_title02_singleline" parent="text_black_sub_list_title02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_sub_list_user" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_sub_list_user_singleline" parent="text_sub_list_user">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_search_list_user" parent="MatchWrap">
+        <item name="android:textColor">@color/com_brightsilver</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_search_list_user_singleline" parent="text_search_list_user">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Tag -->
+    <style name="text_tag_thumb_info" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white_40</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_tag_thumb_info_singleline" parent="text_tag_thumb_info">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_list" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="text_tag_list_singleline" parent="text_tag_list">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_list_more" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white_30</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_tag_list_more_singleline" parent="text_tag_list_more">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_contents01" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">14sp</item>
+
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="text_tag_contents01_singleline" parent="text_tag_contents01">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_contents02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">14sp</item>
+
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="text_tag_contents02_singleline" parent="text_tag_contents02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_contents03" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_tag_contents04" parent="MatchWrap">
+        <item name="android:textColor">@color/drawer_grey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_tag_contents05" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white_80</item>
+        <item name="android:textColorHint">@color/com_white_15</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="text_tag_contents06" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="text_tag_reply_num" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_tag_reply_num_singleline" parent="text_tag_reply_num">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_more" parent="MatchWrap">
+        <item name="android:textColor">@color/com_brightsilver</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_tag_more_singleline" parent="text_tag_more">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_more02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_brightsilver</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_black_tag_vote_num" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="text_black_tag_vote_num_singleline" parent="text_black_tag_vote_num">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_add_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_tag_add_title_singleline" parent="text_tag_add_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_header_tag_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="text_black_header_tag_title_singleline" parent="text_black_header_tag_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_blind_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_whitered</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_tag_blind_title_singleline" parent="text_tag_blind_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_blind_contents" parent="MatchWrap">
+        <item name="android:textColor">@color/zero_grey</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_tag_blind_contents_singleline" parent="text_tag_blind_contents">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_tag_reload_title" parent="MatchWrap">
+        <item name="android:textColor">@color/zero_grey</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_tag_reload_title_singleline" parent="text_tag_reload_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <!-- Comment -->
+    <style name="text_endpage_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_endpage_title_singleline" parent="text_endpage_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_endpage_name" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_endpage_name_singleline" parent="text_endpage_name">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_endpage_time" parent="MatchWrap">
+        <item name="android:textColor">@color/com_brightsilver</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_endpage_time_singleline" parent="text_endpage_time">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_endpage_contents" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">13sp</item>
+
+        <item name="android:lineSpacingExtra">1sp</item>
+    </style>
+
+    <style name="text_endpage_contents_singleline" parent="text_endpage_contents">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_endpage_contents06" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">13sp</item>
+
+        <item name="android:lineSpacingExtra">1sp</item>
+    </style>
+
+    <style name="text_endpage_noti" parent="MatchWrap">
+        <item name="android:textColor">@color/com_silver</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_endpage_noti_singleline" parent="text_endpage_noti">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_endpage_post" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="text_black_endpage_post_singleline" parent="text_black_endpage_post">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_endpage_post02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="text_black_endpage_post02_singleline" parent="text_black_endpage_post02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_endpage_comment" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+    <style name="text_black_endpage_comment_singleline" parent="text_black_endpage_comment">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_endpage_contents04" parent="MatchWrap">
+        <item name="android:textColor">@color/com_brightsilver</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_endpage_contents05" parent="MatchWrap">
+        <item name="android:textColor">@color/com_blue04</item>
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+    <!-- Font styles End -->
+
+    <style name="text_black_endpage_name02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="text_black_endpage_name02_singleline" parent="text_black_endpage_name02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_endpage_time02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_grey</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_endpage_time02_singleline" parent="text_endpage_time02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_endpage_contents02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">16sp</item>
+
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="text_endpage_contents02_singleline" parent="text_endpage_contents02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_endpage_tag" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">17sp</item>
+
+    </style>
+
+    <style name="text_black_endpage_tag_singleline" parent="text_black_endpage_tag">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_endpage_contents03" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+    <style name="text_endpage_contents03_singleline" parent="text_endpage_contents03">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_endpage_more" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_endpage_more_singleline" parent="text_endpage_more">
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <!-- Font styles Write Common -->
+
+    <style name="text_black_write_tag_hint" parent="MatchWrap">
+        <item name="android:textColor">@color/com_whitegrey</item>
+        <item name="android:textSize">27sp</item>
+
+    </style>
+
+    <style name="text_black_write_tag_hint_singleline" parent="text_black_write_tag_hint">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_write_tag" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">27sp</item>
+
+    </style>
+
+    <style name="text_black_write_tag_singleline" parent="text_black_write_tag">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_contents_hint" parent="MatchWrap">
+        <item name="android:textColor">@color/search_grey</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="text_write_contents_hint_singleline" parent="text_write_contents_hint">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_contents" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="text_write_contents_singleline" parent="text_write_contents">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_tag_badge_num" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_write_tag_badge_num_singleline" parent="text_write_tag_badge_num">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_write_tag_list" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="text_black_write_tag_list_singleline" parent="text_black_write_tag_list">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_contents01" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white_30</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Font styles Write Attach -->
+
+    <style name="text_black_roll_badge_num" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">13.5sp</item>
+
+    </style>
+
+    <style name="text_black_roll_badge_num_singleline" parent="text_black_roll_badge_num">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_roll_time" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/com_black_20</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="text_roll_time_singleline" parent="text_roll_time">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_time" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_write_time_singleline" parent="text_write_time">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Font styles Write Media Edit -->
+
+    <style name="text_write_photoedit" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_write_photoedit_singleline" parent="text_write_photoedit">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_photoedit_disable" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white_20</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_write_photoedit_disable_singleline" parent="text_write_photoedit_disable">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_text_disable" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white_20</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_write_text_disable_singleline" parent="text_write_text_disable">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_text" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_write_text_singleline" parent="text_write_text">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_text02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_write_text02_singleline" parent="text_write_text02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_videotime" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:shadowColor">@color/com_black_20</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="text_write_videotime_singleline" parent="text_write_videotime">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Font styles Popup -->
+
+    <style name="text_popup_list01" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_list02" parent="MatchWrap">
+        <item name="android:textColor">@color/color_b3b3b3</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_title02" parent="MatchWrap">
+        <item name="android:textColor">@color/color_b3b3b3</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_title03" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="text_popup_title_singleline" parent="text_popup_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_popup_contents01" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="text_popup_contents01_singleline" parent="text_popup_contents01">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_popup_contents02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_silver</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_popup_contents02_singleline" parent="text_popup_contents02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_popup_contents03" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_popup_contents04" parent="MatchWrap">
+        <item name="android:textColor">@color/com_silver</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="text_popup_contents05" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="text_popup_contents06" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_contents07" parent="MatchWrap">
+        <item name="android:textColor">@color/setting_grey</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">4.5sp</item>
+    </style>
+
+    <style name="text_popup_contents08" parent="MatchWrap">
+        <item name="android:textColor">@color/search_grey</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_contents09" parent="MatchWrap">
+        <item name="android:textColor">@color/com_grey</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_more" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">12.5sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_more_singleline" parent="text_popup_more">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_popup_btn01" parent="MatchWrap">
+        <item name="android:textColor">@color/drawer_grey</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_btn01_singleline" parent="text_popup_btn01">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_popup_btn02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_btn02_singleline" parent="text_popup_btn02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_popup_btn03" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_popup_btn03_singleline" parent="text_popup_btn03">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_toast_contents01" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_toast_contents01_singleline" parent="text_toast_contents01">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_toast_contents02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_toast_contents02_singleline" parent="text_toast_contents02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_link" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textColorHint">@color/com_silver</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="text_write_link_singleline" parent="text_write_link">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_link_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_write_link_title_singleline" parent="text_write_link_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_link_contents" parent="MatchWrap">
+        <item name="android:textColor">@color/com_deepgrey</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_write_link_contents_singleline" parent="text_write_link_contents">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_write_link_url" parent="MatchWrap">
+        <item name="android:textColor">@color/bg_black_50</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_write_link_url_singleline" parent="text_write_link_url">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_setting_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_setting_title_singleline" parent="text_setting_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Font styles Drawer -->
+
+    <style name="text_black_drawer_name" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">25sp</item>
+
+    </style>
+
+    <style name="text_black_drawer_name_singleline" parent="text_black_drawer_name">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_drawer_post_num" parent="MatchWrap">
+        <item name="android:textColor">@color/com_brightred</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_drawer_post_num_singleline" parent="text_drawer_post_num">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_drawer_post" parent="MatchWrap">
+        <item name="android:textColor">@color/com_brightred</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_drawer_post_singleline" parent="text_drawer_post">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_drawer_list_head" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+    <style name="text_black_drawer_list_head_singleline" parent="text_black_drawer_list_head">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_drawer_list_head02" parent="MatchWrap">
+        <item name="android:textColor">@color/drawer_grey</item>
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+    <style name="text_black_drawer_list_head02_singleline" parent="text_black_drawer_list_head02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_drawer_list_head03" parent="MatchWrap">
+        <item name="android:textColor">@color/bg_black_80</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="text_black_alarm_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+    <style name="text_black_alarm_title_singleline" parent="text_black_alarm_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_alarm_contents" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+    </style>
+
+    <style name="text_black_alarm_contents_singleline" parent="text_black_alarm_contents">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_alarm_contents02" parent="MatchWrap">
+        <item name="android:textColor">@color/bg_black_80</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Font styles Login -->
+
+    <style name="text_login_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">41sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_black_login_name" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textColorHint">@color/div_grey</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_login_name" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textColorHint">@color/div_grey</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_login_name_singleline" parent="text_login_name">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_login_name02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textColorHint">@color/div_grey</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_login_terms" parent="MatchWrap">
+        <item name="android:textColor">@color/com_grey</item>
+        <item name="android:textSize">12sp</item>
+
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="text_login_terms_singleline" parent="text_login_terms">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_login_terms02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_whitered</item>
+        <item name="android:textSize">12sp</item>
+
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="text_login_terms02_singleline" parent="text_login_terms02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_login_noti" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">13sp</item>
+
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="text_login_btn" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_login_btn_singleline" parent="text_login_btn">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_login_btn01" parent="MatchWrap">
+        <item name="android:textColor">@color/com_silver</item>
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+    <style name="text_login_btn02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white_60</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_login_btn02_singleline" parent="text_login_btn02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_login_btn03" parent="MatchWrap">
+        <item name="android:textColor">@color/color_b3b3b3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_login_btn04" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black02</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Font styles Setting -->
+
+    <style name="text_black_setting_name" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">25sp</item>
+
+    </style>
+
+    <style name="text_black_setting_name_singleline" parent="text_black_setting_name">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_setting_list_title" parent="MatchWrap">
+        <item name="android:textColor">@color/com_brightsilver</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_setting_list_title_singleline" parent="text_setting_list_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_setting_list_title02" parent="MatchWrap">
+        <item name="android:textColor">@color/setting_grey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Font styles Mypage -->
+
+    <style name="text_my_contents01" parent="MatchWrap">
+        <item name="android:textColor">@color/bg_black_50</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="text_black_my_name" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+    <style name="text_black_my_name_singleline" parent="text_black_my_name">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_my_post_num" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_my_post_num_singleline" parent="text_my_post_num">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_my_post_num02" parent="MatchWrap">
+        <item name="android:textColor">@color/drawer_grey</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_my_post_num03" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white_80</item>
+        <item name="android:textSize">11sp</item>
+
+    </style>
+
+    <style name="text_my_post" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_my_post_singleline" parent="text_my_post">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_my_tag" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="text_tag_list_more02" parent="MatchWrap">
+        <item name="android:textColor">@color/search_grey</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_tag_list_more03" parent="MatchWrap">
+        <item name="android:textColor">@color/com_whitegrey</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_my_edit" parent="MatchWrap">
+        <item name="android:textColor">@color/search_grey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_black_my_more" parent="MatchWrap">
+        <item name="android:textColor">@color/search_grey</item>
+        <item name="android:textSize">17sp</item>
+
+    </style>
+
+    <!-- Font styles Viewer -->
+
+    <style name="text_viewer_num_on" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_viewer_num_on_singleline" parent="text_viewer_num_on">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_viewer_num_off" parent="MatchWrap">
+        <item name="android:textColor">@color/com_white_50</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_viewer_num_off_singleline" parent="text_viewer_num_off">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Font styles zeropage -->
+
+    <style name="text_zero_none01" parent="MatchWrap">
+        <item name="android:textColor">@color/zero_grey</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_zero_none01_singleline" parent="text_zero_none01">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_zero_none02" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_zero_none02_singleline" parent="text_zero_none02">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_zero_none03" parent="MatchWrap">
+        <item name="android:textColor">@color/zero_grey</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_zero_none03_singleline" parent="text_zero_none03">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_zero_none04" parent="MatchWrap">
+        <item name="android:textColor">@color/zero_grey</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_zero_none04_singleline" parent="text_zero_none04">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_zero_none05" parent="MatchWrap">
+        <item name="android:textColor">@color/com_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_black_zero_none06" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">22sp</item>
+
+    </style>
+
+    <style name="text_zero_none05_singleline" parent="text_zero_none05">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_zero_contents01" parent="MatchWrap">
+        <item name="android:textColor">@color/search_grey</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+    <style name="text_zero_contents02" parent="MatchWrap">
+        <item name="android:textColor">@color/bg_black_90</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+    <style name="text_zero_contents03" parent="MatchWrap">
+        <item name="android:textColor">@color/com_brightgrey</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <!-- Font styles intro -->
+
+    <style name="text_intro_contents" parent="MatchWrap">
+        <item name="android:textColor">@color/com_blue</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="text_intro_contents_singleline" parent="text_intro_contents">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_black_intro_btn" parent="MatchWrap">
+        <item name="android:textColor">@color/com_red</item>
+        <item name="android:textSize">19sp</item>
+
+    </style>
+
+    <style name="text_black_intro_btn_singleline" parent="text_black_intro_btn">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Divider styles -->
+
+    <style name="singleline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.67dp</item>
+    </style>
+
+    <style name="singleline02">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="singleline03">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+    </style>
+
+    <style name="singleline04">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3.5dp</item>
+    </style>
+
+    <style name="singleline_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0.67dp</item>
+    </style>
+
+    <style name="div_actionbar" parent="singleline">
+        <item name="android:background">@color/div_grey</item>
+    </style>
+
+    <style name="div_actionbar02" parent="singleline">
+        <item name="android:background">@color/div_grey04</item>
+    </style>
+
+    <style name="div_endpage" parent="singleline">
+        <item name="android:background">@color/div_grey02</item>
+    </style>
+
+    <style name="div_write" parent="singleline">
+        <item name="android:background">@color/div_grey03</item>
+    </style>
+
+    <style name="login_line" parent="singleline02">
+        <item name="android:background">@color/div_red</item>
+    </style>
+
+    <style name="login_line02" parent="singleline02">
+        <item name="android:background">@color/div_grey</item>
+    </style>
+
+    <style name="login_line03" parent="singleline">
+        <item name="android:background">@color/zero_grey</item>
+    </style>
+
+    <style name="div_setting" parent="singleline02">
+        <item name="android:background">@color/bg_grey</item>
+    </style>
+
+    <style name="div_drawer" parent="singleline03">
+        <item name="android:background">@color/com_red</item>
+    </style>
+
+    <style name="tab_drawer" parent="singleline04">
+        <item name="android:background">@color/com_red</item>
+    </style>
+
+</resources>

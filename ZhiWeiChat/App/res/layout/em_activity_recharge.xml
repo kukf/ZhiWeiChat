@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarLeftImage="@drawable/ease_mm_title_back"
+        app:titleBarTitle="@string/recharge" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/member_date"
+                    android:textColor="@color/gray_normal"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:singleLine="true"
+                    android:text="@string/no_vip"
+                    android:textColor="@color/gray_normal"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:text="@string/select_time_long"
+                    android:textColor="@color/gray_normal"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/time_long"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/time_long_select_blank"
+                    android:textColor="@color/gray_normal"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <CheckBox
+                        android:id="@+id/one_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/radio_bg_selector"
+                        android:button="@null"
+                        android:padding="10dip"
+                        android:text="@string/one_month"
+                        android:textColor="@color/radio_button_text_color"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/three_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/radio_bg_selector"
+                        android:button="@null"
+                        android:padding="10dip"
+                        android:text="@string/three_month"
+                        android:textColor="@color/radio_button_text_color"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <CheckBox
+                        android:id="@+id/half_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/radio_bg_selector"
+                        android:button="@null"
+                        android:padding="10dip"
+                        android:text="@string/half_year"
+                        android:textColor="@color/radio_button_text_color"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/one_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/radio_bg_selector"
+                        android:button="@null"
+                        android:padding="10dip"
+                        android:text="@string/one_year"
+                        android:textColor="@color/radio_button_text_color"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/two_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/radio_bg_selector"
+                        android:button="@null"
+                        android:padding="10dip"
+                        android:text="@string/two_year"
+                        android:textColor="@color/radio_button_text_color"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+                    <CheckBox
+                        android:id="@+id/other_charge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/radio_bg_selector"
+                        android:button="@null"
+                        android:padding="10dip"
+                        android:text="@string/other_charge_vip"
+                        android:textColor="@color/radio_button_text_color"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.67dip"
+                android:background="@color/btn_gray_normal" />
+
+            <LinearLayout
+                android:id="@+id/pay_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/msp_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/pay_alipay"
+                    android:textColor="@color/radio_button_text_color"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/chk_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pay_bg_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:textColor="@color/radio_button_text_color"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.67dip"
+                android:background="@color/btn_gray_normal" />
+
+            <CheckBox
+                android:id="@+id/agree_disclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:text="@string/agree_disclaimer"
+                android:textColor="@color/gray_normal"
+                android:textSize="18sp"></CheckBox>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.67dip"
+                android:background="@color/btn_gray_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:padding="10dip"
+                    android:singleLine="true"
+                    android:text="@string/disclaimer"
+                    android:textColor="@color/gray_normal"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/disclaimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="@string/disclaimer_content"
+                    android:textColor="@color/gray_normal"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.67dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@color/btn_gray_normal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/em_btn_style_recharge"
+        android:text="@string/recharge"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>
